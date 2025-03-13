@@ -1,0 +1,62 @@
+.table-view {
+    -fx-background-color: transparent;
+}
+
+.table-view:focused {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-column {
+    -fx-alignment: center;
+}
+
+.table-view .table-row-cell:even {
+    -fx-text-fill: black;
+    -fx-background-color: #effafc;
+}
+
+.table-view .table-row-cell:odd {
+    -fx-text-fill: black;
+    -fx-background-color: #f7fefa;
+}
+
+.table-view .column-header,
+.table-view .corner {
+    -fx-background-color: #004080;
+}
+
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #FFFFFF;
+}
+
+.table-view .table-row-cell:hover,
+.table-view .table-row-cell:selected {
+    -fx-background-color: #005797;
+}
+
+.table-view .table-row-cell:hover .text,
+.table-view .table-row-cell:selected .text {
+    -fx-fill: #FFFFFF;
+}
+
+#title {
+    -fx-font-size: 21;
+    -fx-font-weight: bold;
+    -fx-text-fill: #004080;
+}
+
+#add-expense-button {
+    -fx-padding: 12 20;
+    -fx-background-color: #004080;
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF;
+}
+
+#add-expense-button:hover {
+    -fx-opacity: 0.85;
+}

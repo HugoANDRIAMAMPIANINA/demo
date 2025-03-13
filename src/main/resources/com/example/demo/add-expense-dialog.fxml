@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:id="addExpenseDialogPane"
+            stylesheets="@css/main.css"
+            prefHeight="400.0" prefWidth="600.0">
+    <buttonTypes>
+        <ButtonType text="Ajouter" buttonData="OK_DONE"/>
+        <ButtonType text="Annuler" buttonData="CANCEL_CLOSE"/>
+    </buttonTypes>
+    <content>
+        <GridPane>
+            <columnConstraints>
+                <ColumnConstraints percentWidth="20"/>
+                <ColumnConstraints percentWidth="80"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints percentHeight="100"/>
+            </rowConstraints>
+            <VBox spacing="20" GridPane.columnIndex="0" GridPane.rowIndex="0" fillWidth="true">
+                <Label text="Période"/>
+                <Label text="Logement"/>
+                <Label text="Nourriture"/>
+                <Label text="Sorties"/>
+                <Label text="Transport"/>
+                <Label text="Voyage"/>
+                <Label text="Impôts"/>
+                <Label text="Autres"/>
+            </VBox>
+            <VBox spacing="12" GridPane.columnIndex="1" GridPane.rowIndex="0" fillWidth="true">
+                <TextField fx:id="periodTextField" promptText="aaaa-mm (ex: 2025-01)"/>
+                <TextField fx:id="housingTextField"/>
+                <TextField fx:id="foodTextField"/>
+                <TextField fx:id="outingTextField"/>
+                <TextField fx:id="transportTextField"/>
+                <TextField fx:id="travelTextField"/>
+                <TextField fx:id="taxesTextField"/>
+                <TextField fx:id="otherTextField"/>
+            </VBox>
+        </GridPane>
+    </content>
+</DialogPane>
