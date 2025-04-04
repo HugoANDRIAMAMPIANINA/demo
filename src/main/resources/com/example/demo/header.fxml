@@ -4,7 +4,8 @@
 
 <MenuBar fx:id="menuBar" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.demo.HeaderController">
     <Menu text="Navigation">
-        <MenuItem fx:id="expensesMenuItem" text="Tableau Dépenses"/>
+        <MenuItem fx:id="expensesMenuItem" text="Tableau dépenses"/>
+        <MenuItem fx:id="incomesMenuItem" text="Tableau revenus"/>
         <MenuItem fx:id="dashboardMenuItem" text="Tableau de bord"/>
     </Menu>
 </MenuBar>

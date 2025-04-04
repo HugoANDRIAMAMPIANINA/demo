@@ -19,6 +19,9 @@ public class HeaderController {
     @FXML
     private MenuItem dashboardMenuItem;
 
+    @FXML
+    private MenuItem incomesMenuItem;
+
     public void initialize() {
         expensesMenuItem.setOnAction(new EventHandler<ActionEvent>() {
             @Override public void handle(ActionEvent e) {
@@ -31,6 +34,13 @@ public class HeaderController {
             @Override public void handle(ActionEvent e) {
                 System.out.println("go to dashboard page");
                 switchScene(e, "dashboard.fxml", dashboardMenuItem);
+            }
+        });
+
+        incomesMenuItem.setOnAction(new EventHandler<ActionEvent>() {
+            @Override public void handle(ActionEvent e) {
+                System.out.println("go to incomes page");
+                switchScene(e, "income-view.fxml", dashboardMenuItem);
             }
         });
     }

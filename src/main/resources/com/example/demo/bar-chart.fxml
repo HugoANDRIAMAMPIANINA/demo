@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.chart.LineChart?>
 
 <?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.BarChart?>
+
 <?import javafx.scene.chart.CategoryAxis?>
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.demo.LineChartController">
+      fx:controller="com.example.demo.BarChartController">
     <children>
-        <LineChart fx:id="lineChart">
+        <BarChart fx:id="barChart">
             <xAxis>
-                <CategoryAxis fx:id="xAxis" label="Date"/>
+                <CategoryAxis label="Date"/>
             </xAxis>
             <yAxis>
-                <NumberAxis fx:id="yAxis" label="Montant"/>
+                <NumberAxis label="Montant"/>
             </yAxis>
-        </LineChart>
+        </BarChart>
     </children>
 </VBox>

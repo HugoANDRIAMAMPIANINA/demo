@@ -18,5 +18,11 @@
             <fx:include source="pie-chart.fxml" GridPane.columnIndex="0" GridPane.rowIndex="0" fillWidth="true"/>
             <fx:include source="line-chart.fxml" GridPane.columnIndex="1" GridPane.rowIndex="0" fillWidth="true"/>
         </GridPane>
+        <VBox>
+            <padding>
+                <Insets left="100.0" right="100.0"/>
+            </padding>
+            <fx:include source="bar-chart.fxml"/>
+        </VBox>
     </VBox>
 </VBox>

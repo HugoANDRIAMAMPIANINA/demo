@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:id="addIncomeDialogPane"
+            stylesheets="@css/main.css"
+            prefHeight="400.0" prefWidth="600.0">
+    <buttonTypes>
+        <ButtonType text="Ajouter" buttonData="OK_DONE"/>
+        <ButtonType text="Annuler" buttonData="CANCEL_CLOSE"/>
+    </buttonTypes>
+    <content>
+        <GridPane>
+            <columnConstraints>
+                <ColumnConstraints percentWidth="20"/>
+                <ColumnConstraints percentWidth="80"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints percentHeight="100"/>
+            </rowConstraints>
+            <VBox spacing="20" GridPane.columnIndex="0" GridPane.rowIndex="0" fillWidth="true">
+                <Label text="Période"/>
+                <Label text="Salaire"/>
+                <Label text="Aides"/>
+                <Label text="Auto-entreprise"/>
+                <Label text="Revenus passifs"/>
+                <Label text="Autres"/>
+            </VBox>
+            <VBox spacing="12" GridPane.columnIndex="1" GridPane.rowIndex="0" fillWidth="true">
+                <TextField fx:id="periodTextField" promptText="aaaa-mm (ex: 2025-01)"/>
+                <TextField fx:id="salaryTextField"/>
+                <TextField fx:id="aidTextField"/>
+                <TextField fx:id="selfEmployedTextField"/>
+                <TextField fx:id="passiveTextField"/>
+                <TextField fx:id="otherTextField"/>
+            </VBox>
+        </GridPane>
+    </content>
+</DialogPane>
