@@ -25,21 +25,18 @@ public class HeaderController {
     public void initialize() {
         expensesMenuItem.setOnAction(new EventHandler<ActionEvent>() {
             @Override public void handle(ActionEvent e) {
-                System.out.println("go to expenses page");
                 switchScene(e, "hello-view.fxml", expensesMenuItem);
             }
         });
 
         dashboardMenuItem.setOnAction(new EventHandler<ActionEvent>() {
             @Override public void handle(ActionEvent e) {
-                System.out.println("go to dashboard page");
                 switchScene(e, "dashboard.fxml", dashboardMenuItem);
             }
         });
 
         incomesMenuItem.setOnAction(new EventHandler<ActionEvent>() {
             @Override public void handle(ActionEvent e) {
-                System.out.println("go to incomes page");
                 switchScene(e, "income-view.fxml", dashboardMenuItem);
             }
         });

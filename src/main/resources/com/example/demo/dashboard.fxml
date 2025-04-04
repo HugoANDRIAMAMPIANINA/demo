@@ -4,7 +4,6 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 
-<?import javafx.scene.chart.PieChart?>
 <?import javafx.scene.layout.GridPane?>
 <VBox stylesheets="@css/main.css" xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.example.demo.DashboardController" prefWidth="800" prefHeight="600">

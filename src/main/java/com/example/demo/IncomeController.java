@@ -2,7 +2,6 @@ package com.example.demo;
 
 import com.example.demo.db.IncomeDAO;
 import com.example.demo.model.Income;
-import com.example.demo.model.Income;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Dialog;

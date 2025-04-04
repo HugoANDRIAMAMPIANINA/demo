@@ -4,14 +4,9 @@ import com.example.demo.db.ExpenseDAO;
 import com.example.demo.db.IncomeDAO;
 import com.example.demo.model.Expense;
 import com.example.demo.model.Income;
-import javafx.beans.binding.Bindings;
 import javafx.fxml.FXML;
 import javafx.scene.chart.BarChart;
-import javafx.scene.chart.CategoryAxis;
-import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
-
-import java.text.DecimalFormat;
 import java.util.List;
 
 public class BarChartController {
