@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+
+<MenuBar fx:id="menuBar" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.demo.HeaderController">
+    <Menu text="Navigation">
+        <MenuItem fx:id="expensesMenuItem" text="Tableau Dépenses"/>
+        <MenuItem fx:id="dashboardMenuItem" text="Tableau de bord"/>
+    </Menu>
+</MenuBar>
